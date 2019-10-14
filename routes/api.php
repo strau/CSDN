@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use \Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,16 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
+Route::middleware([])
+    ->namespace('Admin')
+    ->prefix('admin')
+    ->name('admin.')
+    ->group(function() {
+        Route::get('/index', 'IndexController@index')->name('index');
+
+        Route::get('/menu', 'System\MenuController@index')->name('menu');
+        Route::get('/menu/show', 'System\MenuController@show')->name('menu.show');
+    });

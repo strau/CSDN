@@ -1,18 +1,22 @@
+@charset "UTF-8";
+
 /** sidebar侧边栏 */
+
 .sidebar-content {
-  //侧边栏单独滚动
   width: 280px;
   position: fixed;
   background: #151524;
   height: 100vh;
   overflow-x: hidden;
   padding-bottom: 100px;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+}
+
+.sidebar-content::-webkit-scrollbar {
+  display: none;
 }
 
 /** header导航条 */
+
 .el-header {
   background-color: #CCCCCC;
   color: #333;
@@ -20,8 +24,10 @@
 }
 
 /** */
+
 .menu-link {
-  text-decoration:none;
-  color:#333;
+  text-decoration: none;
+  color: #333;
   display: block;
 }
+

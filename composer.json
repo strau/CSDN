@@ -9,12 +9,12 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "facade/ignition": "^1.11",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0"
     },
     "require-dev": {
-        "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
